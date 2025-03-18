@@ -26,8 +26,8 @@ header {
     padding: 20px 0;
     box-shadow: 0 10px 10px lightgrey;
 }
-
-.header__wrapper {
+ 
+.header__wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -135,4 +135,32 @@ header {
 .destination .btn-newyork:hover {
     background-color: white;
     color: #6C3483;
+}
+
+@media screen and (max-width: 360px) {
+
+    .header__wrapper {
+        flex-direction: column;
+       
+
+    }
+
+    .main-menu {
+        display: flex;
+        align-items: left;
+    }
+
+    .destinations__wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 130vh;
+    }
+
+    }
+
+
+
+
+    }
+    
 }
