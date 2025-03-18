@@ -3,6 +3,10 @@
     src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: "Roboto Regular";
@@ -47,6 +51,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     list-style: none;
+    padding-left: 0;
 }
 
 .main-menu li a {
@@ -141,26 +146,25 @@ header {
 
     .header__wrapper {
         flex-direction: column;
-       
+    }
 
+    .header__wrapper .logo {
+        width: 75%;
     }
 
     .main-menu {
-        display: flex;
-        align-items: left;
+        flex-direction: column;
     }
 
     .destinations__wrapper {
-        display: flex;
         flex-direction: column;
-        width: 130vh;
     }
 
+    .destination {
+        width: 100%;
     }
 
-
-
-
+    .destination .btn-newyork {
+        text-align: center;
     }
-    
 }
